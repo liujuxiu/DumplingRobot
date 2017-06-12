@@ -77,8 +77,8 @@ def tuling_replset(msg):
         learning success
         '''
     #1、直接匹配
-    if text in MAP.keys():
-        return MAP[text]
+    if text in MAP1.keys():
+        return MAP1[text]
     #分词
     extract_seg = jieba.analyse.extract_tags(text)
     textseg=fenci.segmentation(text)
